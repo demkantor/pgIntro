@@ -39,7 +39,7 @@ app.get('/songs', (req,res)=>{
         console.log(err);
         res.sendStatus(500);
     })
-    res.send("meow");
+    res.send(200);
 });//end /songs GET
 
 
