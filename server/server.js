@@ -13,6 +13,8 @@ const port = 5000;
 
 // db setup
 const pool = new pg.Pool({
+    user: 'postgres',
+    password: '1728fox',
     database: 'music_library',
     host: 'localhost',
     port: 5432,
@@ -39,7 +41,7 @@ app.get('/songs', (req,res)=>{
         console.log(err);
         res.sendStatus(500);
     })
-    res.send(200);
+    res.sendStatus(200);
 });//end /songs GET
 
 
